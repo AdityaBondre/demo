@@ -30,16 +30,20 @@ To successfully set up the Medix system, ensure the following tools and dependen
 
 ### 1. Cloning the Repository
 Start by cloning the Medix repository to your local machine. Open your terminal and run:
-```type:Generated,lang:Shell,path:,lines:0-0
-git clone https://github.com/YourRepository/Medix.git```
+```
+type:Generated,lang:Shell,path:,lines:0-0
+git clone https://github.com/YourRepository/Medix.git
+```
 
 
 
 ### 2. Installing Dependencies
 Navigate to the project directory and use Maven to install all necessary dependencies:
-```type:Generated,lang:Shell,path:,lines:0-0
+```
+type:Generated,lang:Shell,path:,lines:0-0
 cd Medix
-mvn install```
+mvn install
+```
 
 
 
@@ -54,11 +58,13 @@ Create a `.env` file in the root directory of the project and specify the necess
 - DATABASE_URL: Your database connection string.
 
 Example `.env` file:
-```type:Generated,lang:Environment Variables,path:,lines:0-0
+```
+type:Generated,lang:Environment Variables,path:,lines:0-0
 JWT_SECRET=your_jwt_secret
 DAILY_CO_API_KEY=your_dailyco_api_key
 WHISPER_API_KEY=your_whisperapi_key
 DATABASE_URL=jdbc:mysql://localhost:3306/medixdb
+
 ```
 
 
@@ -68,8 +74,10 @@ Ensure your database is set up according to the connection string specified in t
 
 ### 4. Running the Application
 With all configurations set, run the application using:
-```type:Generated,lang:Shell,path:,lines:0-0
-mvn spring-boot:run```
+```
+type:Generated,lang:Shell,path:,lines:0-0
+mvn spring-boot:run
+```
 
 
 ## Common Pitfalls and Troubleshooting Tips
